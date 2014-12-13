@@ -1,8 +1,8 @@
 module.exports = {
     preload: function() {
-        this.game.stage.backgroundColor = '#900';
+        this.game.stage.backgroundColor = '#bc0f13';
         this.game.load.image('bird', '/assets/santa2.png');
-        this.game.load.image('pipe', '/assets/heart.png');
+        this.game.load.image('pipe', '/assets/heart-white.png');
         this.game.load.image('border-black', '/assets/border1-black.png');
         this.game.load.image('border-green', '/assets/border1-green.png');
         this.game.load.image('border-red', '/assets/border1-red.png');
@@ -32,7 +32,7 @@ module.exports = {
         this.game.load.image('tree-white', '/assets/tree-white.png');
         this.game.load.image('sleigh', '/assets/sleigh.png');
         this.game.load.image('sweater', '/assets/sweater.png');
-        this.game.load.audio('ho', '/assets/ho.wav');
+        this.game.load.audio('jump', '/assets/ho.wav');
     },
 
     create: function() {

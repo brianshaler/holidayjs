@@ -5,7 +5,7 @@ var Play = require('./play');
 
 module.exports = function (elementId) {
 
-  var game = new Phaser.Game(400, 490, Phaser.AUTO, elementId);
+  var game = new Phaser.Game(485, 235, Phaser.AUTO, elementId);
 
   // Our 'score' global variable
   var score = 0;

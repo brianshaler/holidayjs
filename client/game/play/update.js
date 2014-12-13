@@ -5,5 +5,5 @@ module.exports = function() {
     if (this.santa.angle < 20)
         this.santa.angle += 1;
 
-    this.game.physics.overlap(this.santa, this.pipes, this.hit_obstacle, null, this);
+    this.game.physics.overlap(this.santa, this.obstacles, this.hit_obstacle, null, this);
 };
