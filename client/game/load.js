@@ -30,7 +30,7 @@ module.exports = {
         this.game.load.image('tree-red', '/assets/tree-red.png');
         this.game.load.image('tree-green', '/assets/tree-green.png');
         this.game.load.image('tree-white', '/assets/tree-white.png');
-        this.game.load.image('sleigh', '/assets/sleigh.png');
+        this.game.load.image('sleigh', '/assets/sleigh-white.png');
         this.game.load.image('sweater', '/assets/sweater.png');
         this.game.load.audio('jump', '/assets/ho.wav');
     },
