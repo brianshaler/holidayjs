@@ -13,8 +13,7 @@ var paths = {
 gulp.task('bower', function () {
   gulp.src('bower_components/**')
   .pipe(cached())
-  .pipe(gulp.dest('public/vendor'))
-  .pipe(livereload());
+  .pipe(gulp.dest('public/vendor'));
 });
 
 gulp.task('amdify', function () {
@@ -30,7 +29,7 @@ gulp.task('watch', Object.keys(paths), function () {
   awatch(gulp, paths);
 });
 
-gulp.task('server', Object.keys(paths), function (cb) {
+gulp.task('server', ['amdify', 'bower'], function (cb) {
   reloader = livereload();
   nodemon({
     script: './server.js',
