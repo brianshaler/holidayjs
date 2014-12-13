@@ -8,8 +8,10 @@ module.exports = function() {
     this.pipes.createMultiple(20, 'pipe');
     this.timer = this.game.time.events.loop(1500, this.add_row_of_pipes, this);
 
-    this.santa = this.game.add.sprite(100, 245, 'bird');
-    this.santa.body.gravity.y = 1000;
+    this.santa = this.game.add.sprite(100, 145, 'santa');
+    this.santa.width = 30;
+    this.santa.height = 30;
+    this.santa.body.gravity.y = 800;
     this.santa.anchor.setTo(-0.2, 0.5);
 
     // Not 'this.score', but just 'score'
