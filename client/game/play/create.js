@@ -6,8 +6,19 @@ module.exports = function() {
   space_key.onDown.add(this.lift, this);
 
   this.obstacles = this.game.add.group();
-  for (var i=0; i<10; i++) {
-    this.obstacles.create(0, 0, 'pipe', null, false);
+  var assets = [
+    'penguin-white',
+    'penguin-green',
+    'snowflake-white',
+    'snowflake-white-alt',
+    'heart-white',
+    'heart-green',
+    'tree-green',
+    'tree-white'
+  ];
+  for (var i=0; i<40; i++) {
+    var asset = assets[Math.round(Math.random() * assets.length)]
+    this.obstacles.create(0, 0, asset, null, false);
   }
 
   this.santa = this.game.add.sprite(60, 145, 'sleigh');
