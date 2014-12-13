@@ -7,12 +7,11 @@ var footer = require('gulp-footer');
 var nodemon = require('nodemon');
 
 var paths = {
-  bower: 'bower_components/**',
   amdify: 'client/**/*.js'
 };
 
 gulp.task('bower', function () {
-  gulp.src(paths.bower)
+  gulp.src('bower_components/**')
   .pipe(cached())
   .pipe(gulp.dest('public/vendor'))
   .pipe(livereload());
