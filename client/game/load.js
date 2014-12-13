@@ -3,7 +3,34 @@ module.exports = {
         this.game.stage.backgroundColor = '#900';
         this.game.load.image('bird', '/assets/bird.png');
         this.game.load.image('pipe', '/assets/pipe.png');
-        this.game.load.audio('jump', '/assets/jump.wav');
+        this.game.load.image('border-black', '/assets/border1-black.png');
+        this.game.load.image('border-green', '/assets/border1-green.png');
+        this.game.load.image('border-red', '/assets/border1-red.png');
+        this.game.load.image('border-white', '/assets/border1-white.png');
+        this.game.load.image('heart-red', '/assets/heart-red.png');
+        this.game.load.image('heart-black', '/assets/heart-black.png');
+        this.game.load.image('heart-green', '/assets/heart-green.png');
+        this.game.load.image('heart-white', '/assets/heart-white.png');
+        this.game.load.image('penguin-black', '/assets/penguin-black.png');
+        this.game.load.image('penguin-red', '/assets/penguin.png');
+        this.game.load.image('penguin-white', '/assets/penguin-white.png');
+        this.game.load.image('penguin-green', '/assets/penguin-green.png');
+        this.game.load.image('santa', '/assets/santa2.png');
+        this.game.load.image('snowflake-black', '/assets/snoflake2-black.png');
+        this.game.load.image('snowflake-black', '/assets/snoflake2-black.png');
+        this.game.load.image('snowflake-green', '/assets/snoflake2-green.png');
+        this.game.load.image('snowflake-red', '/assets/snoflake2-red.png');
+        this.game.load.image('snowflake-white', '/assets/snoflake2-white.png');
+        this.game.load.image('snowflake-black-alt', '/assets/snoflake-black.png');
+        this.game.load.image('snowflake-black-alt', '/assets/snoflake-black.png');
+        this.game.load.image('snowflake-green-alt', '/assets/snoflake-green.png');
+        this.game.load.image('snowflake-red-alt', '/assets/snoflake-red.png');
+        this.game.load.image('snowflake-white-alt', '/assets/snoflake-white.png');
+        this.game.load.image('tree-black', '/assets/tree-black.png');
+        this.game.load.image('tree-red', '/assets/tree-red.png');
+        this.game.load.image('tree-green', '/assets/tree-green.png');
+        this.game.load.image('tree-white', '/assets/tree-white.png');
+        this.game.load.audio('ho', '/assets/ho.wav');
     },
 
     create: function() {
